@@ -1,50 +1,335 @@
+@import url(./bootstrap.css);
 @import url('https://fonts.googleapis.com/css2?family= Open+Sans:wght@300;400;500;800 & display =swap');
+
+@font-face {
+    font-family: "opensans";
+    src: url(../fontes/OpenSans.ttf);
+}
+
+@font-face {
+    font-family: "arctic";
+    src: url(../fontes/Arctic.otf);
+}
+
+@font-face {
+    font-family: "raleway";
+    src: url(../fontes/Raleway.ttf);
+}
+
+@font-face {
+    font-family: "quantum";
+    src: url(../fontes/Quantum.otf);
+}
+
+@keyframes scrollDown {
+    from {
+        position: relative;
+            top: 0;
+    }
+
+    to {
+        position: relative;
+            top: 10px;
+    }
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     background-color: rgb(34, 34, 34);
-    color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    max-width: 1200px;
-    margin: 0 auto;
+    background-attachment: fixed;
+    padding-top: 350px;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+	width: 9px;
+}
+
+body::-webkit-scrollbar-track {
+	background: rgb(255, 255, 255);
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: rgb(0, 26, 255);
+	border-radius: 20px;
+	border: 3px solid transparent;
+}
+
+
+header {
+    background-image:rgb(34, 34, 34);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+header li {
+    padding-left: 40px;
+    
+}
+
+header a{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: sans-serif;
+    transition: color linear 0.1s;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+header ul a:hover {
+    color: rgb(132, 14,201);
+    text-decoration: none;
+    transition: 0.3s all;
+}
+
+/* #Contato-btn {
+    border: 2px solid rgb(132, 14,201);
+    padding: 0px;
+    border-radius: 10px;
+} */
+/* 
+
+ */
+
+div#start {
+    color: #fff;
+}
+
+div#start button.btn {
+    background-color: transparent;
+    border: 1px solid rgb(132, 14,201);
+    width: 150px;
+    margin-left: 20px;
+}
+
+div#start button.btn:hover {
+    background-color: rgb(132, 14,201);
+    border: 1px solid #000000;
+}
+
+div#start button.btn a,
+div#start button.btn i {
+    padding-right: 20px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+div#start h1,
+div#start p {
+    font-family: "Open Sans";
+}
+
+div#start h1 {
+    font-size: 60px;
+    font: bold;
+}
+
+div#start p {
+    font-size: 25px;
+    font: bold;
+}
+
+div#start h2  {
+    color:rgb(132, 14,201);
+    font-family: "Open Sans";
+    font-size: 40px;
+    font: bold;
+}
+
+div#start h2::after {
+    content: "|";
+    margin-left: 10px;
+    animation: blink .7s infinite;
+}
+
+div#start img {
+    width: 165vh;
+    margin-top: -650px;
+    margin-left: 180px;
+}
+
+div.flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 35px;
+    animation: scrollDown .5s infinite alternate;
+}
+
+div#sobre {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+div#sobre div.col-md-12 {
+    text-align: center;
+    margin-top: 25px;
+}
+
+div#sobre div.col-md-12 h2 {
+    color: rgb(132, 14,201);
+    border: 2px solid #fff;
+    padding: 25px;
+    font-family: "Quantum";
+}
+
+div#sobre div.col-md-12 img#perfil {
+    background-color: rgba(229, 229, 229, 0.3);
+    cursor: pointer;
+    transition: 500ms linear;
+}
+
+div#sobre div.col-md-12 img#perfil:hover {
+    transform: scale(1.1);
+}
+
+div#sobre div.col-md-12 p {
+    font-size: 20px; 
+    color: #fff;
+}
+
+div#sobre div.col-md-12 p span {
+    font-family: "Quantum";
+    color:rgb(246, 24, 253);
+    font-size: 22px;
+}
+
+div#sobre div.col-md-12 h2 {
+    color:  #faa200;
+    border: 2px solid #fff;
+    padding: 25px;
+    font-family: "Open Sans";
+}
+
+div#sobre div.col-md-12 h2 span {
+    cursor: pointer;
+}
+
+div#sobre i {
+    color: #E5E5E5;
+}
+
+div#projetos {
+    margin-top: 150px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+div#projetos div.col-md-12 {
+    text-align: center;
+    margin-top: 25px;
+}
+
+div#projetos div.col-md-12 h2 {
+    color:  #faa200;
+    border: 2px solid #fff;
+    padding: 25px;
+    font-family: "raleway";
+}
+
+div#projetos div.col-md-4 {
+    text-align: center;
+    padding: 30px;
+}
+
+div#projetos div.col-md-4 h3 {
+    font-family: "arctic";
+    color: #ffffff;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+div#projetos div.col-md-4 p {
+    font-family: "raleway";
+    color: #fff;
     padding: 15px;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
+div#projetos div.col-md-4 img {
+    transition: 200ms linear;
 }
 
-div img {
-    width: 50%;
-    height: 50%;
+div#projetos div.col-md-4 img:hover {
+    transform: scale(1.1);
 }
 
-#title{
-    flex-direction: column;
-    line-height: 10px;
+div#projetos i {
+    color: #E5E5E5;
 }
 
-li{
-    display: inline-block;
-    margin: 20px;
+div#contato {
+    margin-top: 150px;
+    padding-bottom: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
-h1 {
-    font-weight: 200;
+div#contato div.col-md-12 {
+    text-align: center;
+    margin-top: 25px;
 }
 
-main{
-    display: flex;
-    flex-direction: row;
-    margin-top: 50px;
+div#contato div.col-md-12 h2 {
+    color: #faa200;
+    border: 2px solid #fff;
+    padding: 25px;
+    font-family: "raleway";
 }
 
-h2{
-    font-size: 50px;
-    line-height: 10px;
-    font-family: 'Open Sans Bold';
+div#contato i {
+    color: #ffffff;
 }
 
+div#contato div.col-md-4 {
+    text-align: center;
+    margin-top: 25px;
+}
+
+div#contato div.col-md-4 h4 {
+    font-family: "arctic";
+    color: #000000;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 40px;
+    font: 400;
+}
+
+div#contato div.col-md-4 a {
+    line-height: 45px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    color: #ffffff;
+    padding: 15px;
+    margin-top: 25px;
+}
