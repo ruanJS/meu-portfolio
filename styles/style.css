@@ -1,5 +1,6 @@
 @import url(./bootstrap.css);
 @import url('https://fonts.googleapis.com/css2?family= Open+Sans:wght@300;400;500;800 & display =swap');
+@import url('https://fonts.googleapis.com/css2?family= Anton & display=swap');
 
 @font-face {
     font-family: "opensans";
@@ -192,7 +193,7 @@ div#sobre div.col-md-12 h2 {
     color: rgb(132, 14,201);
     border: 2px solid #fff;
     padding: 25px;
-    font-family: "Quantum";
+    font-family: "Anton", sans-serif;
 }
 
 div#sobre div.col-md-12 img#perfil {
@@ -256,7 +257,7 @@ div#projetos div.col-md-4 {
 }
 
 div#projetos div.col-md-4 h3 {
-    font-family: "sans-serif";
+    font-family: "Quantum", sans-serif;
     color: #ffffff;
     border-bottom: 1px solid #fff;
     margin-bottom: 15px;
@@ -264,9 +265,9 @@ div#projetos div.col-md-4 h3 {
 }
 
 div#projetos div.col-md-4 p {
-    font-family: "raleway";
-    color: #fff;
-    padding: 15px;
+    font-family: "Quantum", sans-serif;
+    color: #ffffff;
+    padding: 30px;
 }
 
 div#projetos div.col-md-4 img {
