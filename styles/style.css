@@ -151,7 +151,7 @@ div#start p {
 div#start h2  {
     color:rgb(132, 14,201);
     font-family: "Open Sans";
-    font-size: 40px;
+    font-size: 45px;
     font: bold;
 }
 
@@ -193,7 +193,8 @@ div#sobre div.col-md-12 {
 
 div#sobre div.col-md-12 h2 {
     color: rgb(132, 14,201);
-    border: 2px solid #fff;
+    border: 3px solid #fff;
+    border-radius: 10px;
     padding: 25px;
 }
 
@@ -215,7 +216,7 @@ div#sobre div.col-md-12 p {
 div#sobre div.col-md-12 p span {
     font-family: "Quantum";
     color:rgb(246, 24, 253);
-    font-size: 22px;
+    font-size: 25px;
 }
 
 div#sobre div.col-md-12 h2 {
@@ -247,7 +248,8 @@ div#projetos div.col-md-12 {
 
 div#projetos div.col-md-12 h2 {
     color:  #faa200;
-    border: 2px solid #fff;
+    border: 3px solid #fff;
+    border-radius: 10px;
     padding: 25px;
     font-family: "raleway";
 }
@@ -299,6 +301,7 @@ div#contato div.col-md-12 {
 div#contato div.col-md-12 h2 {
     color: #faa200;
     border: 2px solid #fff;
+    border-radius: 10px;
     padding: 25px;
     font-family: "raleway";
 }
